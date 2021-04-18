@@ -7,6 +7,9 @@ export default class CountriesApi {
 
   fetchCountry() {
     return fetch(`${BASE_URL}/${this.searchQuery}`).then(response => {
+      if (!response.ok) {
+        throw response;
+      }
       return response.json();
     });
   }

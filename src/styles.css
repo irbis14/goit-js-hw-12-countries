@@ -2,8 +2,12 @@ html {
   box-sizing: border-box;
 }
 
-div {
-  outline: 1px solid teal;
+body {
+  /* background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/world-map-outline-in-gray-color-chokkicx.jpg'); */
+  background-image: url('./images/world-map.png');
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 *,
@@ -19,6 +23,7 @@ div {
 
 .container,
 .result-container {
+  background-color: rgba(256, 256, 256, 90%);
   margin: auto;
   padding: 10px;
   display: block;
